@@ -7,7 +7,7 @@ It will be possible by data together with the file path as a JSON key.
 
 ## Installation
 
-`npm i -D git+https://github.com/BigFly3/pug-html-loader.git`
+`npm i -D git+https://github.com/BigFly3/pug-html-info-loader.git`
 
 ## add options
 - basePath (optional)    
@@ -21,7 +21,7 @@ set to pathInfo
 - pathInfo.pug → first/second/page.pug
 - pathInfo.html → first/second/page.html
 - pathInfo.dir → first/second/
-- pathInfo.parent -> second
+- pathInfo.parent → second
 - pathInfo.basename → page
 - pathInfo.htmlname → page.html
 - pathInfo.pugname → page.pug
@@ -85,7 +85,7 @@ module.exports = {
     // your modules...
     rules: [{
       test: /\.pug/,
-      loaders: ['html-loader', 'pug-html-loader'],
+      loaders: ['html-loader', 'pug-html-info-loader'],
       options: {
         // options to pass to the compiler same as: https://pugjs.org/api/reference.html
         data: {

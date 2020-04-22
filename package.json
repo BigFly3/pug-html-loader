@@ -1,19 +1,19 @@
 {
-  "name": "pug-html-loader",
-  "version": "1.1.5",
-  "description": "Pug to html loader for webpack",
+  "name": "pug-html-info-loader",
+  "version": "1.0.0",
+  "description": "Pug to html loader for webpack with pathInfo added as local variables",
   "main": "lib/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/BigFly3/pug-html-loader.git"
+    "url": "https://github.com/BigFly3/pug-html-info-loader.git"
   },
   "bugs": {
-    "url": "https://github.com/BigFly3/pug-html-loader/issues"
+    "url": "https://github.com/BigFly3/pug-html-info-loader/issues"
   },
-  "homepage": "https://github.com/BigFly3/pug-html-loader",
+  "homepage": "https://github.com/BigFly3/pug-html-info-loader",
   "keywords": [
     "html",
     "pug",
