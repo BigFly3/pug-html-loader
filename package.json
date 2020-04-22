@@ -8,12 +8,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/willyelm/pug-html-loader.git"
+    "url": "https://github.com/BigFly3/pug-html-loader.git"
   },
   "bugs": {
-    "url": "https://github.com/willyelm/pug-html-loader/issues"
+    "url": "https://github.com/BigFly3/pug-html-loader/issues"
   },
-  "homepage": "https://github.com/willyelm/pug-html-loader",
+  "homepage": "https://github.com/BigFly3/pug-html-loader",
   "keywords": [
     "html",
     "pug",
@@ -22,7 +22,7 @@
     "compile",
     "plain"
   ],
-  "author": "Williams Medina <williams.medinaa@gmail.com>",
+  "author": "@BigFly3",
   "license": "MIT",
   "dependencies": {
     "loader-utils": "^0.2.17",
