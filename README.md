@@ -10,32 +10,33 @@ It will be possible by data together with the file path as a JSON key.
 `npm i -D git+https://github.com/BigFly3/pug-html-info-loader.git`
 
 ## add options
-- basePath (optional)    
+- **basePath** (optional)    
   Base directory for public path.  
-  default → node.env.pwd
+  【 default 】 → node.env.pwd
 
 ## added local variables
-ex src/baseDir/first/second/page.pug & config.basePath = baseDir's path
+ex 【 src/baseDir/first/second/page.pug 】 & 【 config.basePath = baseDir's path 】
 
-set to pathInfo
-- pathInfo.pug → first/second/page.pug
-- pathInfo.html → first/second/page.html
-- pathInfo.dir → first/second/
-- pathInfo.parent → second
-- pathInfo.basename → page
-- pathInfo.htmlname → page.html
-- pathInfo.pugname → page.pug
+added pathInfo
+- 【 pathInfo.pug 】 → first/second/page.pug
+- 【 pathInfo.html 】 → first/second/page.html
+- 【 pathInfo.dir 】 → first/second/
+- 【 pathInfo.parent 】 → second
+- 【 pathInfo.basename 】 → page
+- 【 pathInfo.htmlname 】 → page.html
+- 【 pathInfo.pugname 】 → page.pug
 
 If **config.basePath** is not set, it will be the path from **node.env.pwd**.  
 
-set to pathInfo
-- pathInfo.pug → src/baseDir/first/second/page.pug
-- pathInfo.dir → src/baseDir/first/second/
+added pathInfo
+- 【 pathInfo.pug 】 → src/baseDir/first/second/page.pug
+- 【 pathInfo.html 】 → src/baseDir/first/second/page.html
+- 【 pathInfo.dir 】 → src/baseDir/first/second/
 
 
 ## meta data example
 
-meta.json
+**meta.json**
 ```json
 {
   "global": {
@@ -73,7 +74,7 @@ meta.json
 }
 ```
 
-webpack.config
+**webpack.config**
 
 ```javascript
 const path = require('path')
@@ -99,7 +100,7 @@ module.exports = {
 };
 ```
 
-localfile.pug:  
+**localfile.pug**  
 ```
 - var config = localConf[pathInfo.basename] ? localConf[pathInfo.basename] : globalConf;
 head
@@ -117,8 +118,8 @@ body(class=config.bodyClass)
   p this page path → #{pathiInfo.html} 
 ```
 ex 
-- path/to/page1.pug → config.title = page1.title 
-- path/to/page3.pug → config.title = global.title 
+- 【 path/to/page1.pug 】 → config.title = page1.title 
+- 【 path/to/page3.pug 】 → config.title = global.title 
 
 
 
