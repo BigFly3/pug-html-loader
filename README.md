@@ -102,7 +102,7 @@ module.exports = {
 
 **localfile.pug**  
 ```
-- var config = localConf[pathInfo.basename] ? localConf[pathInfo.basename] : globalConf;
+- var config = localConf[pathInfo.htmlname] ? localConf[pathInfo.htmlname] : globalConf;
 head
   title=config.title
   meta(name='description', content=config.description)
