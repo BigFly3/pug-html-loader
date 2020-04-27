@@ -7,7 +7,7 @@ It will be possible by data together with the file path as a JSON key.
 
 ## Installation
 
-`npm i -D git+https://github.com/BigFly3/pug-html-info-loader.git`
+`npm i -D pug-html-info-loader`
 
 ## add options
 - **basePath** (optional)    
