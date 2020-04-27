@@ -1,6 +1,6 @@
 {
   "name": "pug-html-info-loader",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Pug to html loader for webpack with pathInfo added as local variables",
   "main": "lib/index.js",
   "scripts": {
