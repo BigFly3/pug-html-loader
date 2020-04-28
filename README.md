@@ -29,9 +29,9 @@ added pathInfo
 If **config.basePath** is not set, it will be the path from **node.env.pwd**.  
 
 added pathInfo
-- 【 pathInfo.pug 】 → src/baseDir/first/second/page.pug
+- 【 pathInfo.pug  】 → src/baseDir/first/second/page.pug
 - 【 pathInfo.html 】 → src/baseDir/first/second/page.html
-- 【 pathInfo.dir 】 → src/baseDir/first/second/
+- 【 pathInfo.dir  】 → src/baseDir/first/second/
 
 
 ## meta data example
@@ -102,14 +102,14 @@ module.exports = {
 
 **localfile.pug**  
 ```
-- var config = localConf[pathInfo.htmlname] ? localConf[pathInfo.htmlname] : globalConf;
+- var config = localConf[pathInfo.html] ? localConf[pathInfo.html] : globalConf;
 head
   title=config.title
   meta(name='description', content=config.description)
   meta(name='keywords', content=config.keywords)
 
   meta(property='og:title', content=config.og_title)
-  meta(property='og:description',content=config.og_description)
+  meta(property='og:description', content=config.og_description)
   meta(property='og:url', content=config.og_url)
   meta(property='og:image', content=config.og_image)
 
