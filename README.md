@@ -84,17 +84,23 @@ module.exports = {
   // your config settings ...
   module: [{
     // your modules...
-    rules: [{
+    rules: [
+      {
       test: /\.pug/,
-      loaders: ['html-loader', 'pug-html-info-loader'],
-      options: {
-        // options to pass to the compiler same as: https://pugjs.org/api/reference.html
-        data: {
-          globalConf:metadata['global'],
-          localConf :metadata['local']
-        }, // set of data to pass to the pug render.
-        basePath: path.resolve(__dirname, 'src')
-      }
+      use: [
+        'html-loader',
+        {
+          loader: 'pug-html-info-loader',
+          options: {
+            data: {
+              globalConf:metadata['global'],
+              localConf :metadata['local']
+            }, // set of data to pass to the pug render.
+            basePath: path.resolve(__dirname, 'src')
+            // base folder path for local variables.
+          }
+        }
+      ]
     }]
   }]
 };
